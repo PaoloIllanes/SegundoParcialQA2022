@@ -7,7 +7,7 @@ import webUi.pages.toDoIst.MainMenuLeftPart;
 import webUi.pages.toDoIst.MainPageTodoIst;
 import webUi.pages.toDoIst.TopBarMenu;
 
-public class LogOutTodoIst {
+public class LogOutTodoIst extends BaseTodoIst{
 
     MainPageTodoIst mainPageTodoIst= new MainPageTodoIst();
     LoginPageTodoIst loginPageTodoIst= new LoginPageTodoIst();
@@ -27,8 +27,10 @@ public class LogOutTodoIst {
 
         topBarMenu.userIconButton.click();
         topBarMenu.cerrarSesionButton.click();
+        Thread.sleep(2000);
 
         Assertions.assertTrue(mainPageTodoIst.getStartedImage.isControlDisplayed(),"No se lorgo el logout");
+
 
 
 
