@@ -7,5 +7,6 @@ import webUi.control.Image;
 public class TopBarMenu {
     public Button userIconButton = new Button(By.xpath("//img[@class='user_avatar big settings_avatar']"));
     public Button cerrarSesionButton = new Button(By.xpath("//span[text()='Cerrar sesión']"));
+    public Button userConfigButton= new Button(By.xpath("//img[@class='user_avatar big']"));
 
 }
